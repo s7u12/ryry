@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <title>Ruuan ystävät ry</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- oma tyyli bootstrapin tyylin jälkeen-->
+    <link href="tyyli.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#paavalikko" data-bs-offset="50">
+
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#mainNavbar',
+            offset: 70
+        });
+    </script>
+
+
+    <nav id="#paavalikko" class="navbar navbar-expand-sm navbar-custom fixed-top ">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#"><img src="kuvat/RYlogo.png" alt="Logo" style="width:40px;"
+                    class="rounded-pill"> Ruuan ystävät ry</a>
+
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ETUSIVU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#meista">TARINAMME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">LINKIT&VINKIT</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#vinkkejä">Vinkit</a></li>
+                            <li><a class="dropdown-item" href="#reseptit">Reseptit</a></li>
+                            <li><a class="dropdown-item" href="#videot">Videot</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hallitus">HALLITUS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#palaute">OTA YHTEYTTÄ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="kuvat/keksit.jpg" alt="keksi" class="d-block">
+                <div class="carousel-caption">
+                    <h3>Me pidämme kekseistä.</h3>
+                    <p>Maistuisi varmaan sinullekin?</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="kuvat/lounas.jpg" alt="lounasannos" class="d-block">
+                <div class="carousel-caption">
+                    <h3>Nam!</h3>
+                    <p>Lounas voi näyttää myös tältä.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="kuvat/sizzlepasila.jpg" alt="malliannoksia" class="d-block">
+                <div class="carousel-caption">
+                    <h3>Ai että!</h3>
+                    <p>Nämä malliannokset sijaitsevat Pasilassa.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="kuvat/brainrot.jpg" alt="Brainrot" class="d-block">
+
+                <div class="carousel-caption">
+                    <h3 class="red">Hmm...</h3>
+                    <p>Brainrot-muroja emme ole vielä maistaneet.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <main>
+        <section id="alku" class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Tervetuloa Ruuan ystävät ry:n kotisivuille </h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 kuva"><img src="kuvat/burgeri.jpg" alt="Hampurilainen" class="special-img">
+                    </div>
+                    <div class="col-md-4">
+                        <p><i>"En kaipaa sahramia hunajaa <br>
+                                En halua hodariini srirachaa <br>
+                                Usko pois, että onnellinen olen vaan <br>
+                                kun saan lihaa ja perunaa"</i><br>
+                            - Popeda</p>
+                    </div>
+                    <div class="col-md-4 kuva"><img src="kuvat/jaatelo.jpg" alt="Jäätelö" class="special-img"></div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section id="meista" class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>Mikä ihmeen Ruuan ystävät?</h2>
+                        <p>Ruuan ystävät ry (RYry) on aatteellinen yhdistys, jonka tavoitteena on lisätä
+                            hyvinvointia yhteisöllisten makumatkojen kautta. Yhdistyksen toiminta alkoi virallisesti
+                            WhatsApp-ryhmän perustamispäivänä 21.10.2016. Yhdistykseen kuuluu tällä hetkellä kolme
+                            perustajajäsentä.</p>
+                        <p>Toiminta on jatkunut aktiivisena yhdistyksen perustamisesta lähtien. Kun yhdelle yhdistyksen
+                            jäsenistä iskee mieliteko, hän ottaa yhteyttä jäseniin sopiakseen seuraavan ruokaretken
+                            ajankohdan ja paikan. Jäseneksi ei voi liittyä, ellei tiedä, mitä lempinimeä
+                            yhdistyksen perustajajäsenet käyttävät Coca-Colasta-juomasta.</p>
+                        <p>Yhdistys otti suuren harppauksen loppuvuodesta 2025, kun uraa uurtava IT-alan opiskelija
+                            (ja yhdistyksen puheenjohtaja) rakensi yhdistykselle ensimmäiset nettisivut osana
+                            IT-tradenomitutkintonsa opintojaksoa.</p>
+                        <p>Ken tietää, mitä syömme seuraavaksi?</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Näissä kävimme viimeksi</h3>
+                        <p>
+                        <ul style="list-style-type:none">
+                            <li>Grill Room Helsinki (2025)<br> &#127828;&#127828;&#127828;&#127828;</li>
+                            <li>McDonald's Mäntsälä (2025)<br> &#127828;&#127828;&#127828;</li>
+                            <li>Oma keittiö<br> &#127828;&#127828;&#127828;&#127828;&#127828;
+                            </li>
+                        </ul>
+                        </p>
+                        <h3>Seuraava kohteemme</h3>
+                        <p>Palace</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vinkkejä" class="container">
+            <h2>Ruuan ystävien vinkit</h2>
+            <p>Tässä vinkkejä Ruuan ystäviltä ruuan ystäville.</p>
+            <div class="card-group">
+                <div class="card">
+                    <img src="kuvat/mcdo.jpg" class="card-img-top" alt="pikaruokaravintola">
+                    <div class="card-body">
+                        <h5 class="card-title">Ravintolasuositus</h5>
+                        <p class="card-text">"Suosittelen kokeilemaan lounaalla edullista opiskelijaruokalaa."</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">RY ry:n puheenjohtaja</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="kuvat/ilotulitus.jpg" class="card-img-top" alt="ilotulitus">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruokamuistot</h5>
+                        <p class="card-text">
+                        <p>"Herkullisesta annoksesta kannattaa ottaa valokuva ennen ruokailua. Näin ruokamuistosta voi
+                            nauttia koko loppuelämän."</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">RY ry:n rahastonhoitaja</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="kuvat/royalrepublic.jpg" class="card-img-top" alt="konsertti">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruokamusiikki</h5>
+                        <p class="card-text">
+                        <p>"Kokeile laittaa ruokailun ajaksi musiikkia soimaan nostattamaan tunnelmaa."
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">RY ry:n sihteeri</small>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <section id="reseptit" class="container">
+                <h2>Reseptejä</h2>
+                <p>Kuka haluaisi syödä samaa ruokaa joka päivä? Ehkä jotkut, mutta me emme. Sen kunniaksi jaamme kolme
+                    suosikkireseptiämme kaikille ruuan ystäville ja ruuan ystäviksi haluaville.</p>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                Makaronilaatikko
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+
+                                <b>Ainekset:</b> 200g jauhelihaa, 1 pss HeMaPa, 1 pss pastaa, 2 kananmunaa, 7dl
+                                munamaitoa,
+                                mausteita<br>
+                                <b>Valmistus:</b> Kypsennä jauheliha, sekoita ainekset ja paista uunivuoassa 200
+                                asteessa
+                                40min.
+                                <img src="kuvat/makruloota.png" class="card-img-food" alt="makaronilaatikko">
+                                <br><i>Kuvan generointityökalu: Firefly Vector 4</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                                Green Goddess -salaatti
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <br> <img src="kuvat/gg.jpg" class="card-img-food" alt="salaatti">
+                                <br><br> Linkki reseptiin: <br><a
+                                    href=https://www.k-ruoka.fi/reseptit/green-goddess--salaatti>k-ruoka.fi/reseptit/green-goddess--salaatti</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                                Korvapuusti
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                Tämä toimii:<br> <a
+                                    href=https://www.valio.fi/reseptit/korvapuustit>valio.fi/reseptit/korvapuustit</a>
+                                <br><br> <img src="kuvat/puusti.jpg" class="card-img-food" alt="korvapuusti">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="videot" class="container">
+                <h2>Inspiraatiota videoista</h2>
+                <p>Omaa ruokaretkeä odotellessa on mukava katsella muiden tekemiä ponnisteluja hyvän ruuan eteen. Tässä
+                    hallituksen top 3 ruokavideot.</p>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#video1">Syömishaaste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#video2">2kg siika</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#video3">Ranskalainen klassikkovisailu Burger
+                            Quiz</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane container active" id="video1">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/r88y24--4KM?si=v_K5FBcN0UTNqFWw"
+                                title="Syömishaaste" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane container fade" id="video2">
+                        <div class="ratio ratio-16x9">
+                            <iframe src=" https://www.youtube.com/embed/SlIw7GiHUkc?si=PkMJhGz5orXPu_rb" title="Siika"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane container fade" id="video3">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="    https://www.youtube.com/embed/XNF-EfavXNA?si=tcr6Iba794g2FIQA"
+                                title="Burger Quiz" allowfullscreen></iframe>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="hallitus">
+                <div class="table-container">
+                    <h2>RYryn hallitus 2016-2025</h2>
+                    <p>Tässä kaikki kolme jäsentä ja heidän roolit.</p>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Etunimi</th>
+                                <th>Sukunimi</th>
+                                <th>Rooli</th>
+                                <th>Lempiruoka</th>
+                                <th>Inhokkiruoka</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Su.</td>
+                                <td>L.</td>
+                                <td>puheenjohtaja</td>
+                                <td>Korvapuusti</td>
+                                <td>Maksalaatikko</td>
+                            </tr>
+                            <tr>
+                                <td>E.</td>
+                                <td>T.</td>
+                                <td>taloudenhoitaja</td>
+                                <td>Hamppari</td>
+                                <td>Surströmming</td>
+                            </tr>
+                            <tr>
+                                <td>Si.</td>
+                                <td>L.</td>
+                                <td>varapuheenjohtaja</td>
+                                <td>Surprise Box</td>
+                                <td>Pizza ilman Aurajuustoa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+            </section>
+
+            <section id="palaute">
+                <div class="container palaute">
+                    <h2>Yhteydenottolomake</h2>
+                    <p>Missä haluaisit meidän ruokailevan seuraavaksi? Oletko kiinnostunut yhdistyksen jäsenyydestä? Sen
+                        mekin haluaisimme tietää.
+                        Kokeile täyttää oheinen lomake. Lomake ei kuitenkaan valitettavasti koskaan tavoita meitä, sillä
+                        lomakkeen rakentaja on toistaiseksi lounastauolla. Lähetä-painikkeen painamisen jälkeen näet
+                        kuitenkin painikkeen alta, kuinka
+                        hienosti sait lomakkeen täytettyä.
+                    </p>
+                    <form onsubmit="return false">
+                        <label>Nimi:</label>
+                        <input type="text" id="nimi" placeholder="Etunimi Sukunimi" required maxlength="50" size="20">
+                        <br>
+                        <br>
+                        <label>Sähköposti:</label>
+                        <input type="email" id="sposti" placeholder="esim@erkki.fi" required maxlength="150" size="20">
+                        <br>
+                        <br>
+                        <label>Puhelin:</label>
+                        <input type="tel" id="puh" placeholder="esim. 0401234567" pattern="\+?[0-9 () \-]+" required
+                            maxlength="50" size="20">
+                        <br>
+                        <br>
+                        <label for="viesti">Viesti:</label>
+                        <textarea id="viesti" name="Viestisi" rows="5" cols="30">Kirjoita viestisi tähän</textarea>
+                        <br>
+                        <br>
+                        <label>Mitä lempinimeä käytämme kolajuomasta?</label>
+                        <input type="text" id="kolajuoma" placeholder="arvauksesi tähän" required maxlength="50"
+                            size="20">
+                        <br>
+                        <br>
+
+                        <div>Haluaisin näille sivuille lisää:</div>
+                        <label>
+                            <input type="radio" name="lisaa" value="kuvia">kuvia
+                        </label>
+                        <label>
+                            <input type="radio" name="lisaa" value="ravintola-arvosteluja">ravintola-arvosteluja
+                        </label>
+                        <label>
+                            <input type="radio" name="lisaa" value="ruokamatkatietoa">vinkkejä ruokamatkan
+                            suunnitteluun
+                        </label>
+                        <br> <br>
+
+                        <div>Minua kiinnostaa: </div>
+                        <label>
+                            <input type="checkbox" name="kiinnostus" value="ravintola-annokset">ravintola-annokset
+                        </label>
+                        <label>
+                            <input type="checkbox" name="kiinnostus" value="kahvilatuotteet">kahvilatuotteet
+                        </label>
+                        <label>
+                            <input type="checkbox" name="kiinnostus" value="ruokamatkat">ruokamatkat
+                        </label>
+                        <label>
+                            <input type="checkbox" name="kiinnostus" value="juomat">juomat
+                        </label>
+                        <br><br>
+
+                        <div>Oletko kiinnostunut liittymään RYryn jäseneksi? </div>
+                        <select id="tieto">
+                            <option value="tyhjä">-</option>
+                            <option value="kyllä">kyllä!</option>
+                            <option value="ennyt">en juuri nyt</option>
+                            <option value="enkoskaan">en ikinä :/</option>
+                        </select>
+
+                        <br><br>
+                        <input type="submit" value="Lähetä" onclick="lomake()">
+                        <br><br>
+                    </form>
+
+                    <div id="vastaus"></div>
+                    <script>
+                        function lomake() {
+
+                            let nimi = document.getElementById("nimi").value;
+                            let sposti = document.getElementById("sposti").value;
+                            let puh = document.getElementById("puh").value;
+                            let viesti = document.getElementById("viesti").value;
+                            let kolajuoma = document.getElementById("kolajuoma").value;
+
+                            let muuttuja = "Toivoit sivuillemme lisää: ";
+
+                            let radios = document.getElementsByName('lisaa');
+
+                            for (let i = 0, length = radios.length; i < length; i++) {
+                                if (radios[i].checked) {
+
+                                    muuttuja = muuttuja + radios[i].value;
+
+                                    break;
+                                }
+                            }
+
+                            let monivalinnat = "Sinua kiinnostaa: ";
+
+                            let boxit = document.getElementsByName('kiinnostus');
+
+                            for (let i = 0, length = boxit.length; i < length; i++) {
+                                if (boxit[i].checked) {
+                                    monivalinnat = monivalinnat + " " + boxit[i].value;
+                                }
+                                //jätetään break pois koska voidaan valita useampi checkbox
+                            }
+                            let valinta = "Olitko kiinnostunut liittymään Ruuan ystävät ry:n jäseneksi: ";
+                            let x = document.getElementById("tieto").selectedIndex;
+                            let y = document.getElementById("tieto").options;
+                            valinta = valinta + y[x].text;
+
+                            document.getElementById("vastaus").innerHTML = "Kiitos viestistäsi " + nimi + " " + sposti + " " + puh + "<br>Viestisi: " + viesti + "<br> Kolajuoman lempinimi: " + kolajuoma + "<br>" + muuttuja + "<br>" + monivalinnat + "<br>" + valinta;
+                        }
+                    </script>
+                </div>
+            </section>
+    </main>
+</body>
+
+</html>
